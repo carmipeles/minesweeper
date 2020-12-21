@@ -14,7 +14,7 @@ class MineSweeper(object):
 
     def set_mines(self):
         # TODO: set mines only after the first move
-        l = self.spots.values()
+        l = list(self.spots.values())
         random.shuffle(l)
         for s in l[:self.total_mines]:
             s.is_mine = True

@@ -4,7 +4,6 @@ m = MineSweeper()
 m.set_mines()
 game_over = False
 while not game_over:
-
     m.print()
     x = int(input("enter x:"))
     y = int(input("enter y:"))
